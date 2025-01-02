@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css"/>
+    <title>fast typing bot</title>
+    <script defer src= "/static/script.js"></script>
+</head>
+<body>
+    <h1> Bot Control Panel</h1>
+    <form class = "bot--form">
+        <label for="delay">Time Before start (seconds):</label>
+        <input type="number" class = "delay" name = "delay" min = "4" required>
+
+        <label for="delay">Typing Speed</label>
+        <input type = "number" class = "bot--speed" name = "botSpeed" min = "0" max = "1" step="0.01" required placeholder="0 being the fatstest">
+
+        <button class = "start--btn">Start</button>
+        <button class = "stop--btn">Stop</button>
+    </form>
+    <div class = "response"></div>
+</body>
+</html>
